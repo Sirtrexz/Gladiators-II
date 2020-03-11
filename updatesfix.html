@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        
+
+html{
+    height: 100%;
+}
+body{
+    display:flex;
+}
+.container{
+    background-color:#ffffff;
+    
+}
+
+ nav{
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    background-color:black;
+    font-family: 'Playfair Display', serif;
+}
+ .navbutton a{
+    color: rgb(255, 255, 255);
+    justify-content: space-between;
+    font-size: 2.15rem; 
+    text-decoration: none;
+ 
+ }
+ .navbutton {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    position: relative;
+    right: 40px;
+   
+ }
+ .navbutton:hover{
+    transition-duration: 500ms;
+    text-decoration: white;
+    text-decoration: underline;
+    color: rgb(21, 255, 0);
+    border-bottom: solid 30px rgb(0, 255, 76);
+
+ 
+ }
+ /* .main .divAbout{
+ } */
+ .divAbout {
+     text-shadow: -2px 0px 5px rgba(0,0,0,0.72);
+     text-align: center;
+     display: flex;
+     min-height: 5.25rem;
+     margin-top: 40px;
+     color: rgb(255, 255, 255);
+     
+ }
+ /* Updates logs */
+ main{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color:black;
+    width: 100%;
+ }
+ .divAbout h {
+    font-family: 'Merriweather Sans', sans-serif;
+    text-decoration: underline;
+    font-size: 5.25rem;
+    text-shadow: -2px 0px 5px rgba(0,0,0,0.72);
+     margin-left:auto ;
+    margin-right: auto;
+    padding-right: 100px;
+    margin-bottom: 40px;
+    color: black;
+}
+ .Topic 
+ {
+ background-color: black;
+ height: 60px;
+ width: 100% ;
+ display:flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+
+ 
+ }
+ .Topic h1 p {
+ color:white;
+ font-family: 'Roboto', sans-serif;
+ padding-left: 30px;
+ margin-top: 40px;
+ font-size: 40px;
+ }
+.boxinfo{
+    width: 100%;
+    flex: auto;
+    margin-top: 40px;
+}
+/* Herebox1 manage the limit of the text box in updates logs */
+ /* Herebox1 manage the limit of the text box in updates logs */
+.herebox1 {
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding-left: 30px;
+    position: relative;
+border-radius: 57px 57px 57px 57px;
+-moz-border-radius: 57px 57px 57px 57px;
+-webkit-border-radius: 57px 57px 57px 57px; 
+ border: 3px solid #e3e3e3; 
+  /* boxshadow  */
+  margin: auto;
+-webkit-box-shadow: -7px 8px 37px -10px rgba(0,0,0,0.8);
+-moz-box-shadow: -7px 8px 37px -10px rgba(0,0,0,0.8);
+box-shadow: -7px 8px 37px -10px rgba(0,0,0,0.8);
+}
+.herebox1 p {
+    /* background-color: tomato; */
+    font-size: 1.75rem;
+}
+.insidebox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.insidebox p{
+    /* background-color: turquoise; */
+    padding-top: 40px;
+    display: flex;
+    height: 2px;
+    max-height: 100%;
+    
+}
+
+/* Here goes for the information each update */
+
+.herebox2 img{
+    margin-top: 40px;
+    align-content: center;
+    max-width: 1280px;
+    display:flex;
+    flex-wrap: wrap;
+    min-width: 1000px;
+    /* background-color: yellow; */
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+/* test */
+/* .singleline { */
+    /* background-color: yellow;  */
+    /* height: 60px;
+    padding-left: 50px;
+    margin-top: 40px;
+    border-radius: 57px 57px 57px 57px;
+-moz-border-radius: 57px 57px 57px 57px;
+-webkit-border-radius: 57px 57px 57px 57px; 
+ border: 3px solid #e3e3e3;  */
+  /* boxshadow  */
+  /* -webkit-box-shadow: -7px 8px 37px -10px rgba(0,0,0,0.8);
+-moz-box-shadow: -7px 8px 37px -10px rgba(0,0,0,0.8);
+box-shadow: -7px 8px 37px -10px rgba(0,0,0,0.8); */
+
+.single p {
+    width: 100%;
+    margin-top: 15px;
+    /* background-color: tomato; */
+    font-size: 1.75rem;
+}
+
+.paddingpic , .paddingpic1 ,.paddingpic2 , .paddingpic3{
+    margin-top: 40px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.box{
+    flex-direction: row;
+    flex-direction: column;
+
+}
+.box img{
+    margin-top: 20px;
+    padding-left: 20px;
+
+}
+.responsive  {
+    max-height: auto;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    align-content: center;
+}
+
+
+
+/* ******************FOOOOOOOOOTERRR********************* */
+footer{
+    background-color: black;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    position: relative;
+}
+footer a h1{
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer a h1{
+    padding-top: 19px;
+    font-size: 15px;
+    color:white;
+    display: inline-flex;
+    margin-top: 1px;
+}
+footer h1:hover{
+    transition-duration: 500ms;
+    text-decoration: white;
+    color: rgb(0, 238, 255);
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    
+        <!-- here goes the header part and navgiations -->
+        <nav>
+            <a href="index.html">
+                 <img class="iconresponsive" src="images/testlogo.png" alt="Gladiators" width="100%" ></a>
+               <div class="navbutton">
+                   <a href="index.html" class="boxnav"> <p>About</p></a>
+       
+                   <!-- <div class="dropdown">
+                                       <div class="navbutton"><a href="#"></a></div>
+                                       <div class="navbutton"><a href="#"></a></div>
+                                   </div> -->
+               </div>
+               <div class="navbutton" > 
+                   <a href="updates.html" class="boxnav" ><p>Updates</p></a>
+       
+                   <!-- <div class="dropdown">
+                                       <div class="navbutton"><a href="#"></a></div>
+                                       <div class="navbutton"><a href="#"></a></div>
+                                   </div> -->
+               </div>
+               <div class="navbutton" > 
+                   <a href="multimedia.html" class="boxnav" ><p>Multimedia</p></a>
+       
+                   <!-- <div class="dropdown">
+                                       <div class="navbutton"><a href="#"></a></div>
+                                       <div class="navbutton"><a href="#"></a></div>
+                                   </div> -->
+               </div>
+           </nav>
+    
+    <main>
+        <div class="divAbout">
+            Updates
+        </div>
+        <div class="Topic">
+            <h1>
+                <p> Update Logs</p>
+            </h1>
+        </div>
+        <!-- /* Here goes for the information each update */ -->
+    
+    
+    <div class="boxinfo">
+        <div class="herebox1">
+            <p> &bull; Feb 25,2020
+            </p>
+    
+            <p> &bull;Time to get some loot from the chest!! First apperance of a chest. Introducing few weapons such as crossbow, wielding a sword in first-person, a dagger in the inventory. 
+                You got stab and starts to bleed out, making your last push to activate trigger spikes! Slowly bleeding to death leaded you to the graveyard!R.I.P
+                 </p>
+    
+            
+    
+            </div>
+        </div>
+    <div class="paddingpic1">
+        <div class="herebox2">
+            <img src="/images/chest.png" alt="chest" class="responsive"  maxwidth="1280" height="auto">
+            <img src="/images/crossbow.png" alt="crossbow" class="responsive"  maxwidth="1280" height="auto">
+            <img src="/images/fpwieldsword.png" alt="fpwieldsword" class="responsive"  maxwidth="1280" height="auto">
+
+            <img src="/images/tkdamage.png" alt="Bleeding" class="responsive"  maxwidth="100%" height="auto">
+            <img src="/images/trigger.png" alt="Trigger Spikes" class="responsive"  maxwidth="1280" height="auto">
+            <img src="/images/graveyard.png" alt="graveyard" class="responsive"  maxwidth="1280" height="auto">
+
+
+
+        </div>
+    </div>
+    <div class="boxinfo">
+        <div class="herebox1">
+            <p> &bull; Feb 8,2020
+            </p>
+    
+            <p> &bull;Improving upon the first, Gladiators 2 combat is a huge leap forward. Use weapons & shields to
+                block oncoming enemy attacks! Weapons react to objects & collisions! </p>
+    
+            
+    
+            </div>
+        </div>
+    <div class="paddingpic1">
+        <div class="herebox2">
+            <img src="/images/Deafaultbattle.jfif" alt="" class="responsive"  maxwidth="1280" height="auto">
+        </div>
+    </div>
+    
+    <div class="boxinfo">
+        <div class="herebox1">
+                <p> &bull; Feb 1, 2020 
+                </p>
+                    <p> &bull; Getting wounded in Gladiators 2 will cause varying degrees of bleeding, be sure to seal your wounds shut by cauterizing them with torches and more! </p>
+    
+    
+        </div>
+    </div>
+    <div class="paddingpic1">
+        <div class="herebox2">
+            <img src="/images/cauterize.jfif" alt="" class="responsive"  maxwidth="100%" height="auto">
+        </div>
+    </div>
+    <amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-5402160914504827"
+     data-ad-slot="4615878496"
+     data-auto-format="rspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad>
+    
+    <div class="boxinfo">
+        <div class="herebox1">
+                <p> &bull; Jan 4, 2020
+                </p>
+    
+                <p> &bull;Trigger numerous deadly traps spread throughout the arena to slaughter your foes. Slice,
+                    crush, spike, burn and impale your enemies brutally, only in Gladiators 2! </p>
+    
+    
+        </div>
+    </div>
+    <div class="paddingpic1">
+        <div class="box">
+            <img src="/images/Traps.jfif" alt="" class="responsive"  maxwidth="1280px" height="auto">
+        </div>
+    </div>
+    <div class="boxinfo">
+        <div class="herebox1">
+                <p> &bull; Dec 21, 2019
+                </p>
+    
+                <p> &bull; Dismemberment, decapitation & raw destruction. Every part of your enemies body can be cut
+                    off, pierced, crushed & more. Show no mercy in the arena and you will rise victorious! </p>
+    
+    
+        </div>
+    </div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ads -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5402160914504827"
+     data-ad-slot="4615878496"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    
+    <div class="paddingpic1">
+        <div class="box">
+            <img class="responsive" src="/images/headon.jfif" alt="Head on" maxwidth="auto" height="auto">
+            <img class="responsive" src="/images/headoff.jfif" alt="Head off" maxwidth="auto" height="auto">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- horizontal adds -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-5402160914504827"
+         data-ad-slot="6293574636"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+        </div>
+    
+    </div>
+    <!-- <div class="boxinfo">
+        <div class="singleline">
+            <div class="single">
+                <p> &bull;It’s a medieval style game in Roblox where you can fight against each other and do objectives.
+                </p>
+    
+    
+            </div>
+        </div> -->
+    
+    <!-- </div> -->
+    <!-- duplicate here to get more update notes -->
+    
+    <script type="text/javascript">
+        var vglnk = {key: 'cfbc071334746c149af4ea13186a4e5c'};
+        (function(d, t) {
+            var s = d.createElement(t);
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = '//cdn.viglink.com/api/vglnk.js';
+            var r = d.getElementsByTagName(t)[0];
+                r.parentNode.insertBefore(s, r);
+        }(document, 'script'));
+        
+    </script>
+    </main>
+    <footer> <a href="https://www.roblox.com/users/148903647/profile" target="#">
+        <h1>Made by SirDragoz :D</h1>
+    </a> </footer>
+    </div>
+    
+</body>
+</html>
